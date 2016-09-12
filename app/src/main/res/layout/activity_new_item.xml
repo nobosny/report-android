@@ -1,0 +1,206 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.vectoranalytica.trashwatchfree.NewItemActivity"
+    android:background="#00cccccc">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Now"
+        android:id="@+id/tv_datetime"
+        android:layout_above="@+id/textView"
+        android:layout_toEndOf="@+id/btn_date"
+        android:layout_marginBottom="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="This area is a potential breeding site for:"
+        android:id="@+id/textView"
+        android:layout_below="@+id/btn_date"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/btn_mosq"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        android:padding="0dp"
+        android:src="@drawable/mosquitoes_off"
+        android:background="#00cccccc" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/btn_cock"
+        android:scaleType="fitXY"
+        android:padding="0dp"
+        android:src="@drawable/cock_off"
+        android:background="#00cccccc"
+        android:layout_alignBottom="@+id/btn_mosq"
+        android:layout_toEndOf="@+id/btn_mosq" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/btn_mice"
+        android:scaleType="fitXY"
+        android:padding="0dp"
+        android:src="@drawable/mice_off"
+        android:background="#00cccccc"
+        android:layout_alignBottom="@+id/btn_cock"
+        android:layout_toEndOf="@+id/btn_cock" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/btn_bio"
+        android:scaleType="fitXY"
+        android:padding="0dp"
+        android:src="@drawable/fly_off"
+        android:background="#00cccccc"
+        android:layout_alignBottom="@+id/btn_mice"
+        android:layout_toEndOf="@+id/btn_mice" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/btn_tick"
+        android:scaleType="fitXY"
+        android:padding="0dp"
+        android:src="@drawable/tick_off"
+        android:background="#00cccccc"
+        android:layout_alignBottom="@+id/btn_bio"
+        android:layout_toEndOf="@+id/btn_bio" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_othervectors"
+        android:layout_below="@+id/btn_mosq"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Other"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Do you think the trash came from:"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/et_othervectors"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/btn_house"
+        android:scaleType="fitXY"
+        android:padding="0dp"
+        android:src="@drawable/houses_off"
+        android:background="#00cccccc"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/btn_business"
+        android:scaleType="fitXY"
+        android:padding="0dp"
+        android:src="@drawable/business_off"
+        android:background="#00cccccc"
+        android:layout_alignTop="@+id/btn_house"
+        android:layout_toEndOf="@+id/btn_house"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/btn_construction"
+        android:scaleType="fitXY"
+        android:padding="0dp"
+        android:src="@drawable/construction_off"
+        android:background="#00cccccc"
+        android:layout_alignBottom="@+id/btn_business"
+        android:layout_toEndOf="@+id/btn_business"
+        android:layout_marginRight="8dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_othersources"
+        android:hint="Other"
+        android:layout_below="@+id/btn_house"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:id="@+id/btn_image"
+        android:layout_below="@+id/et_othersources"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/image"
+        android:scaleType="centerInside"
+        android:background="#00cccccc"
+        android:layout_marginRight="8dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/et_description"
+        android:layout_alignBottom="@+id/btn_image"
+        android:lines="6"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/btn_image"
+        android:hint="Observations" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/btn_date"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="8dp"
+        android:src="@android:drawable/ic_menu_my_calendar"
+        android:background="#00cccccc" />
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/map_point"
+        android:layout_below="@+id/btn_image"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp" />
+
+
+</RelativeLayout>
+</ScrollView>

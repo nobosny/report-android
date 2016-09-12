@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="rounded_button">#0000ff</color>
+    <color name="rounded_left_button">#009000</color>
+</resources>
